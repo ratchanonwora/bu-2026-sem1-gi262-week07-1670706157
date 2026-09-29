@@ -52,7 +52,7 @@ namespace Searching
             // [2] find index to insert that make the scores list sorted with binary search
             index = -1;
             int left = 0;
-            int right = scores.Count;
+            int right = scores.Count - 1;
             while (left <= right)
             {
                 int mid = left + (right - left) / 2;
